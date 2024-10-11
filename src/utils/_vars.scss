@@ -1,0 +1,56 @@
+@import './fonts';
+
+$yellow: #FFDD2D;
+$blue: #2B6BF3;
+$dark-blue: #1D253C;
+$light-blue: #C2D2F4;
+$red: #FD466E;
+$bkgColor: #F1F4FC;
+$light-green: #6FCF97;
+$green: #27AE60;
+
+
+@mixin text($family , $weight, $size, $lineHeight) {
+    font-family: $family;
+
+    font-weight: $weight ;
+    font-size: #{$size}px;
+    line-height: #{$lineHeight}px;
+}
+
+
+.h1 {
+    @include text('Intro Bold', 700, 40, 48)
+}
+
+.h2 {
+    @include text('Intro Bold', 700, 24, 24)
+}
+
+.h3 {
+    @include text('Intro Regular', 400, 22, 32)
+}
+
+.h4 {
+    @include text('Intro Book', 400, 22, 32)
+}
+
+.h5 {
+    @include text('Intro Regular', 400, 18, 24)
+}
+
+.txt {
+    @include text('Intro Book', 400, 16, 24)
+}
+
+.txt2 {
+    @include text('Intro Book', 400, 14, 24)
+}
+
+.txt_menu {
+    @include text('Intro Book', 400, 18, 48)
+}
+
+.txt_digits {
+    @include text('Intro Regular', 400, 32, 40)
+}
