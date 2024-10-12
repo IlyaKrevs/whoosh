@@ -1,0 +1,35 @@
+@import '../../utils/vars';
+
+.mainContainer {
+    padding: 8px 0;
+    width: 100%;
+
+    border-radius: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include text('Intro Regular', 400, 18, 32);
+}
+
+
+.yellowStyle {
+    background-color: $yellow;
+    color: $white;
+
+    &:hover {
+        color: $dark-blue;
+    }
+}
+
+
+
+.blueStyle {
+    background-color: $blue;
+    color: $white;
+
+    &:hover {
+        background-color: $darker-blue;
+    }
+}

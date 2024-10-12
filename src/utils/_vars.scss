@@ -1,11 +1,16 @@
 @import './fonts';
 
+$white: #FFFFFF;
 $yellow: #FFDD2D;
 $blue: #2B6BF3;
 $dark-blue: #1D253C;
 $light-blue: #C2D2F4;
-$red: #FD466E;
+$darker-blue: #1252DB;
+
+$gray: #666666;
 $bkgColor: #F1F4FC;
+
+$red: #FD466E;
 $light-green: #6FCF97;
 $green: #27AE60;
 
@@ -19,38 +24,38 @@ $green: #27AE60;
 }
 
 
-.h1 {
+@mixin h1 {
     @include text('Intro Bold', 700, 40, 48)
 }
 
-.h2 {
+@mixin h2 {
     @include text('Intro Bold', 700, 24, 24)
 }
 
-.h3 {
+@mixin h3 {
     @include text('Intro Regular', 400, 22, 32)
 }
 
-.h4 {
+@mixin h4 {
     @include text('Intro Book', 400, 22, 32)
 }
 
-.h5 {
+@mixin h5 {
     @include text('Intro Regular', 400, 18, 24)
 }
 
-.txt {
+@mixin txt {
     @include text('Intro Book', 400, 16, 24)
 }
 
-.txt2 {
+@mixin txt2 {
     @include text('Intro Book', 400, 14, 24)
 }
 
-.txt_menu {
+@mixin txt_menu {
     @include text('Intro Book', 400, 18, 48)
 }
 
-.txt_digits {
+@mixin txt_digits {
     @include text('Intro Regular', 400, 32, 40)
 }

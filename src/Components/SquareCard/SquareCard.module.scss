@@ -1,0 +1,64 @@
+@import '../../utils/vars';
+
+.mainContainer {
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #C2D2F4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $bkgColor;
+    cursor: pointer;
+
+    &:hover {
+        border: 2px solid $blue;
+        background-color: $white;
+    }
+}
+
+.title {
+    color: $dark-blue;
+    @include h3;
+}
+
+.secondContainer {
+    display: flex;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background-color: $white;
+    box-shadow: 0px 8px 16px 0px #2B6BF329;
+}
+
+.descriptionText {
+    @include txt;
+    color: $gray;
+
+
+    white-space: normal; 
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+}
+
+.redColor {
+    fill: $red;
+
+}
+
+.yellowColor {
+    fill: $yellow;
+}
+
+.blueColor {
+    fill: $blue;
+}
