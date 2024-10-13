@@ -1,0 +1,49 @@
+@import '../../utils/vars';
+
+.mainContainer {
+    display: flex;
+
+}
+
+.hideBtn {
+    display: none;
+}
+
+.radioContainer {
+    padding: 8px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 1px solid $light-blue;
+
+    background-color: $bkgColor;
+
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+
+    &:first-child {
+        border-radius: 8px 0 0 8px;
+    }
+
+    &:last-child {
+        border-radius: 0 8px 8px 0;
+    }
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &.checkedStyle {
+        border-width: 2px;
+        border-color: $blue;
+    }
+}
+
+.textContainer {
+    @include text('Intro Book', 400, 12, 24);
+    color: $dark-blue;
+}

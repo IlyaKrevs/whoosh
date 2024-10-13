@@ -1,0 +1,27 @@
+@import '../../../utils/vars';
+
+.textContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 8px;
+
+    color: $blue;
+    @include h5;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.arrowContainer {
+    width: 6px;
+    height: 6px;
+
+    border-top: 2px solid $blue;
+    border-right: 2px solid $blue;
+    border-radius: 1px;
+
+    transform: rotate(45deg) translateY(2px);
+}

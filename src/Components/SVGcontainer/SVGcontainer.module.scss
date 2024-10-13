@@ -1,0 +1,12 @@
+.mainContainer {
+    fill: gray;
+
+    &:hover {
+        fill: red;
+    }
+}
+
+.iconSize {
+    width: 48px;
+    height: 48px;
+}

@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 import styles from './Logo.module.scss'
-import logoImg from '../../assets/logo_default.png'
+import logoImg from '../../assets/logoDefault.svg'
 
 interface IProps {
 

@@ -1,15 +1,16 @@
 import React, { FC } from 'react'
 import styles from './SquareCard.module.scss'
 
-import { ReactComponent as MyIcon } from '../../assets/courierIcon.svg'
+
 import { ReactComponent as RouteIcon } from '../../assets/Route.svg'
+import { SVGcontainer } from '../SVGcontainer/SVGcontainer'
+
 interface IProps {
     titleText: string,
     desc: string,
     svgIcon: React.ReactNode,
     isShowRoute?: boolean,
 }
-
 
 
 
@@ -22,7 +23,10 @@ export const SquareCard: FC<IProps> = ({ titleText, desc, svgIcon, isShowRoute =
 
             <div className={styles.secondContainer}>
                 <div className={styles.imgContainer}>
-                    {svgIcon}
+                    <SVGcontainer
+                        svgIcon={svgIcon}
+
+                    />
                 </div>
                 {isShowRoute && <RouteIcon />}
             </div>

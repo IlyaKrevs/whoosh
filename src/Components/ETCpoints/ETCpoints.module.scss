@@ -1,0 +1,28 @@
+@import '../../utils/vars';
+
+.mainContainer {
+    width: 25px;
+    height: 15px;
+
+    background-color: #CCDBFC;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.point {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $white;
+}
+

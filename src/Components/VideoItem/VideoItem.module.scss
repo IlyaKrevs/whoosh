@@ -1,0 +1,30 @@
+@import '../../utils/vars';
+
+.mainContainer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    background-color: hsla(0, 0%, 0%, 0.322);
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.375);
+    }
+}

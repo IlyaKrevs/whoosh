@@ -1,0 +1,45 @@
+@import '../../utils/vars';
+
+.wrapper {
+    position: relative;
+}
+
+.inputContainer {
+    padding: 16px 30px 16px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid $light-blue;
+    fill: $light-blue;
+    border-radius: 8px;
+
+    @include txt2;
+
+    width: 184px;
+
+
+
+    &:hover {
+        background-color: $bkgColor;
+    }
+
+    &:focus {
+        border-color: $blue;
+
+        &+.svgContainer {
+            fill: $blue;
+        }
+    }
+}
+
+.svgContainer {
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 12px;
+
+    width: 16px;
+    height: 16px;
+    fill: $light-blue;
+}

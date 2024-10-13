@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styles from './LoginBtn.module.scss'
 
-import lockImg from '../../assets/Lock.png'
+import lockImg from '../../assets/lock.svg'
 
 interface IProps {
 

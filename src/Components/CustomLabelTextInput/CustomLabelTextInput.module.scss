@@ -1,0 +1,31 @@
+@import '../../utils/vars';
+
+/* width delete!!! */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 500px; 
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.labelText {
+    @include text('Intro Bold', 700, 12, 16);
+    color: #C4CEE5;
+    text-transform: uppercase;
+}
+
+.inputContainer {
+    @include txt;
+    color: $dark-blue;
+
+    border-bottom: 2px solid hsla(221, 89%, 56%, 0.161);
+
+    &:focus {
+        border-color: $blue;
+    }
+}
+
