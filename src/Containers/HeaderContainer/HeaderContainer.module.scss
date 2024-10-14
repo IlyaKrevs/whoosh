@@ -1,0 +1,33 @@
+@import '../../utils/vars';
+
+.wrapper {
+    @include trim;
+    background-color: $bkgColor;
+
+    border-bottom: 1px solid $light-blue;
+}
+
+.mainContainer {
+    height: 80px;
+
+    padding: 8px 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    order: 1;
+    padding-right: 66px;
+}
+
+.menu {
+    order: 2;
+    flex-grow: 1;
+}
+
+.login {
+    order: 3;
+    padding-left: 32px;
+}

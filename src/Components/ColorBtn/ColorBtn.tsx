@@ -22,7 +22,10 @@ export const ColorBtn: FC<IProps> = ({ text, viewStyle }) => {
     }
 
     return (
-        <button className={resultStyles.join(' ')}>
+        <button
+            className={resultStyles.join(' ')}
+            onClick={(e) => e.preventDefault()}
+        >
             {text}
         </button>
     )

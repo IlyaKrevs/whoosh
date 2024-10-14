@@ -2,10 +2,14 @@
 
 .wrapper {
     position: relative;
+    display: flex;
+
 }
 
 .inputContainer {
-    padding: 16px 30px 16px 12px;
+    flex-grow: 1;
+
+    padding: 7px 30px 7px 16px;
 
     display: flex;
     justify-content: space-between;
@@ -17,7 +21,6 @@
 
     @include txt2;
 
-    width: 184px;
 
 
 

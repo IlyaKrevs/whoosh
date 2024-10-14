@@ -59,3 +59,18 @@ $green: #27AE60;
 @mixin txt_digits {
     @include text('Intro Regular', 400, 32, 40)
 }
+
+
+
+
+/* 1366/2=683 and 360/2=130 */
+
+@mixin trim {
+    padding-left: calc(50% - 683px);
+    padding-right: calc(50% - 683px);
+
+    @media (max-width: 1365px) {
+        padding-left: calc(50% - 130px);
+        padding-right: calc(50% - 130px);
+    }
+}

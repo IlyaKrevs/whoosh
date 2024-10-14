@@ -15,13 +15,23 @@ import { TextWithArrow } from './Components/Texts/TextWithArrow/TextWithArrow';
 import { NavBarText } from './Components/Texts/NavBarText/NavBarText';
 import { UnderlinedText } from './Components/Texts/UnderlinedText/UnderlinedText';
 import { VideoItem } from './Components/VideoItem/VideoItem';
+import { Tooltip } from './Components/Tooltip/Tooltip';
+import { HeaderContainer } from './Containers/HeaderContainer/HeaderContainer';
+import { GetStartedContainer } from './Containers/GetStartedContainer/GetStartedContainer';
+import { TrackCard } from './Components/TrackCard/TrackCard';
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
 
-        <VideoItem />
+
+      <HeaderContainer />
+
+
+      <div className="special">
+
+
+        <TrackCard />
 
       </div>
     </div>

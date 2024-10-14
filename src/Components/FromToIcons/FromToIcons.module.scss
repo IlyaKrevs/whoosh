@@ -1,0 +1,51 @@
+@import '../../utils/vars';
+
+.iconsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.circlesContainer {
+    .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    .first {
+        width: 24px;
+        height: 24px;
+        background-color: rgba(43, 107, 243, 0.08);
+    }
+
+    .second {
+        width: 10px;
+        height: 10px;
+        background-color: $blue;
+    }
+
+    .third {
+        width: 4px;
+        height: 4px;
+        background-color: #fff;
+    }
+}
+
+
+.pointsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .point {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: rgba(43, 107, 243, 0.08);
+    }
+
+}

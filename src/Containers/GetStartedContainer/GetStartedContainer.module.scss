@@ -1,0 +1,78 @@
+@import '../../utils/vars';
+
+.mainContainer {
+    width: 360px;
+    height: 500px;
+
+    border: 2px solid $light-blue;
+    border-radius: 8px;
+
+    padding: 36px 32px 24px 32px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titleContainer {
+    @include h4;
+    color: $dark-blue;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.inputsWrapper {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputsContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.btnsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.resetBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    @include txt;
+    color: $gray;
+
+    .xIcon {
+        position: relative;
+        transform: translateX(-15px) translateY(-2px);
+
+        .firstLine {
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            background-color: $gray;
+            transform: translateY(50%) rotate(45deg);
+        }
+
+        .secondLine {
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            background-color: $gray;
+            transform: translateY(50%) rotate(-45deg);
+
+        }
+    }
+}
+
