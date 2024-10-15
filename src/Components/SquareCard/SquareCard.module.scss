@@ -22,11 +22,13 @@
 }
 
 .title {
+    order: 1;
     color: $dark-blue;
     @include h3;
 }
 
 .secondContainer {
+    order: 2;
     display: flex;
 }
 
@@ -44,6 +46,7 @@
 }
 
 .descriptionText {
+    order: 3;
     @include txt;
     color: $gray;
 
@@ -64,4 +67,17 @@
 
 .blueColor {
     fill: $blue;
+}
+
+
+.containerSpecial {
+    border: none;
+}
+
+.titleSpecialOrder {
+    order: 2;
+}
+
+.svgSpecialOrder {
+    order: 1;
 }

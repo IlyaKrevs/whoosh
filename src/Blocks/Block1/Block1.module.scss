@@ -1,0 +1,64 @@
+@import '../../utils/vars';
+
+
+.wrapper {
+    @include trim;
+    background-color: #F8FAFF;
+
+    background-image: url('../../assets/StatueOfLiberty.png');
+    background-position: center 100%;
+
+    background-repeat: no-repeat;
+}
+
+.mainContainer {
+    padding: 36px 32px 32px 103px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.titleContainer {
+    padding-top: 30px;
+    width: 375px;
+    color: $dark-blue;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & h1 {
+        @include h1;
+    }
+
+    & p {
+        width: 360px;
+        @include txt;
+    }
+}
+
+.videoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    & h3 {
+        @include h3;
+        color: $dark-blue;
+    }
+}
+
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 72px;
+}

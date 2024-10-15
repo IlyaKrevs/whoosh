@@ -16,8 +16,8 @@ export const FromToIcons = () => {
             </div>
 
             <div className={styles.pointsContainer}>
-                {new Array(7).fill(null).map(i => {
-                    return <div className={styles.point}></div>
+                {new Array(7).fill(null).map((i, indx) => {
+                    return <div key={indx} className={styles.point}></div>
                 })}
             </div>
 

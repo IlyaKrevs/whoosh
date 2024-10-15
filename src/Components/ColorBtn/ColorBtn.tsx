@@ -9,17 +9,17 @@ interface IProps {
     viewStyle: colorStyle
 }
 
-
+let colorObj: { [key in colorStyle]: string } = {
+    blue: styles.blueStyle,
+    yellow: styles.yellowStyle
+}
 
 export const ColorBtn: FC<IProps> = ({ text, viewStyle }) => {
 
     let resultStyles = [styles.mainContainer]
 
-    if (viewStyle === 'blue') {
-        resultStyles.push(styles.blueStyle)
-    } else if (viewStyle === 'yellow') {
-        resultStyles.push(styles.yellowStyle)
-    }
+
+    resultStyles.push(colorObj[viewStyle])
 
     return (
         <button

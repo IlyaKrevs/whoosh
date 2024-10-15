@@ -1,0 +1,25 @@
+@import '../../utils/vars';
+
+.mainContainer {
+    height: 40px;
+    padding: 8px 16px;
+
+    border: 1px solid #DDE7FD;
+    border-radius: 24px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.text {
+    @include txt;
+    color: $dark-blue;
+}
+

@@ -26,7 +26,9 @@ export const RadioGroup: FC<IProps> = ({ }) => {
         <div className={styles.mainContainer}>
             {options.map(item => {
                 return (
-                    <label className={[styles.radioContainer, (value === item.value ? styles.checkedStyle : '')].join(' ')} >
+                    <label
+                        key={item.label}
+                        className={[styles.radioContainer, (value === item.value ? styles.checkedStyle : '')].join(' ')} >
 
                         <input
                             className={styles.hideBtn}

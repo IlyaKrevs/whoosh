@@ -1,6 +1,6 @@
 @import '../../utils/vars';
 
-/* width delete!!! */
+
 .mainContainer {
     display: flex;
     flex-direction: column;
@@ -20,11 +20,10 @@
 .inputContainer {
     @include txt;
     color: $dark-blue;
-
+    background-color: inherit;
     border-bottom: 2px solid hsla(221, 89%, 56%, 0.161);
 
     &:focus {
         border-color: $blue;
     }
 }
-

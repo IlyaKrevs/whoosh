@@ -16,10 +16,11 @@
 
 .yellowStyle {
     background-color: $yellow;
-    color: $white;
+
+    color: $dark-blue;
 
     &:hover {
-        color: $dark-blue;
+        color: $white;
     }
 }
 

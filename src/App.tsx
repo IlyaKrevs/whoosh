@@ -6,7 +6,7 @@ import { LoginBtn } from './Components/LoginBtn/LoginBtn';
 import { ColorBtn } from './Components/ColorBtn/ColorBtn';
 import { SquareCard } from './Components/SquareCard/SquareCard';
 
-import { courierIcon, suitcaseIcon, supportIcon } from './assets/iconsSVG';
+import { courierIcon, suitcaseIcon, supportIcon, littleSuitcaseIcon } from './assets/iconsSVG';
 import { CustomSearchInput } from './Components/CustomSearchInput/CustomSearchInput';
 import { RadioGroup } from './Components/RadioGroup/RadioGroup';
 import { CustomLabelTextInput } from './Components/CustomLabelTextInput/CustomLabelTextInput';
@@ -19,6 +19,15 @@ import { Tooltip } from './Components/Tooltip/Tooltip';
 import { HeaderContainer } from './Containers/HeaderContainer/HeaderContainer';
 import { GetStartedContainer } from './Containers/GetStartedContainer/GetStartedContainer';
 import { TrackCard } from './Components/TrackCard/TrackCard';
+import { BreakBoxLine } from './Components/BreakBoxLine/BreakBoxLine';
+import { BtnWithIcon } from './Components/BtnWithIcon/BtnWithIcon';
+import { SVGcontainer } from './Components/SVGcontainer/SVGcontainer';
+import { Block2 } from './Blocks/Block2/Block2';
+import { Block1 } from './Blocks/Block1/Block1';
+import { Block3 } from './Blocks/Block3/Block3';
+import { Block4 } from './Blocks/Block4/Block4';
+
+
 
 function App() {
   return (
@@ -27,19 +36,20 @@ function App() {
 
       <HeaderContainer />
 
+      <Block1 />
 
-      <div className="special">
+      <Block2 />
 
 
-        <TrackCard />
+      <BreakBoxLine />
 
-      </div>
+      <Block3 />
+
+      <Block4 />
+
     </div>
   );
 }
 
 export default App;
-
-
-
 

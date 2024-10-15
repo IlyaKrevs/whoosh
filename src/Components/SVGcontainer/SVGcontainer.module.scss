@@ -1,12 +1,23 @@
-.mainContainer {
-    fill: gray;
+@import '../../utils/vars';
+
+.grayHover {
+    fill: $light-gray;
 
     &:hover {
-        fill: red;
+        fill: inherit;
     }
 }
 
-.iconSize {
-    width: 48px;
-    height: 48px;
+
+.redColor {
+    fill: $red;
 }
+
+.blueColor {
+    fill: $blue;
+}
+
+.yellowColor {
+    fill: $yellow;
+}
+
