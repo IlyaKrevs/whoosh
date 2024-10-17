@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/whoosh/static/css/main.89b8afee.css",
+    "main.js": "/whoosh/static/js/main.e8507135.js",
+    "static/media/video.png": "/whoosh/static/media/video.437d1474be37423eb4bf.png",
+    "static/media/cityIntersect.png": "/whoosh/static/media/cityIntersect.733d744736b5e8b1e165.png",
+    "static/media/Intro-Book.ttf": "/whoosh/static/media/Intro-Book.cd9aac58a97d24734201.ttf",
+    "static/media/Intro-Bold.ttf": "/whoosh/static/media/Intro-Bold.62034b9159ac021d21e9.ttf",
+    "static/media/Intro-Regular.ttf": "/whoosh/static/media/Intro-Regular.f2b75892c7fc6e0047d5.ttf",
+    "static/media/StatueOfLiberty.png": "/whoosh/static/media/StatueOfLiberty.2437dc697a8a00ca1b62.png",
+    "static/media/Intro-Regular.woff": "/whoosh/static/media/Intro-Regular.c1c6736debf32ecf7b9a.woff",
+    "static/media/Intro-Bold.woff": "/whoosh/static/media/Intro-Bold.6881e4b0da46ee27f7c1.woff",
+    "static/media/Intro-Book.woff": "/whoosh/static/media/Intro-Book.047d1f862e6d617bfca0.woff",
+    "static/media/Route.svg": "/whoosh/static/media/Route.de049f76289456ef03c528f308be6888.svg",
+    "index.html": "/whoosh/index.html",
+    "main.89b8afee.css.map": "/whoosh/static/css/main.89b8afee.css.map",
+    "main.e8507135.js.map": "/whoosh/static/js/main.e8507135.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89b8afee.css",
+    "static/js/main.e8507135.js"
+  ]
+}
