@@ -1,7 +1,7 @@
 @import '../../utils/vars';
 
 .grayHover {
-    fill: $light-gray;
+    fill: $light-gray ;
 
     &:hover {
         fill: inherit;
@@ -20,4 +20,3 @@
 .yellowColor {
     fill: $yellow;
 }
-

@@ -26,13 +26,15 @@ import { Block2 } from './Blocks/Block2/Block2';
 import { Block1 } from './Blocks/Block1/Block1';
 import { Block3 } from './Blocks/Block3/Block3';
 import { Block4 } from './Blocks/Block4/Block4';
+import { Block5 } from './Blocks/Block5/Block5';
+import { Block6 } from './Blocks/Block6/Block6';
+import { FooterContainer } from './Containers/FooterContainer/FooterContainer';
 
 
 
 function App() {
   return (
     <div className="App">
-
 
       <HeaderContainer />
 
@@ -46,6 +48,14 @@ function App() {
       <Block3 />
 
       <Block4 />
+
+      <Block5 />
+
+      <BreakBoxLine />
+
+      <Block6 />
+
+      <FooterContainer />
 
     </div>
   );

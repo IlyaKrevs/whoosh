@@ -1,10 +1,16 @@
 @import '../../utils/vars';
 
+
+
+
+
 .wrapper {
     @include trim;
     background-color: $bkgColor;
 
     border-bottom: 1px solid $light-blue;
+
+    position: relative;
 }
 
 .mainContainer {
@@ -15,19 +21,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 1365px) {
+        padding: 0 16px;
+    }
 }
 
 .logo {
     order: 1;
     padding-right: 66px;
+
+    @media (max-width: 1365px) {
+        padding: 0;
+    }
 }
 
 .menu {
+
     order: 2;
     flex-grow: 1;
+
+    @media (max-width: 1365px) {
+        flex-grow: 0;
+    }
 }
 
 .login {
     order: 3;
     padding-left: 32px;
+
+    @media (max-width: 1365px) {
+        order: -1;
+        padding: 0;
+    }
 }

@@ -6,6 +6,7 @@ import { NavBarText } from '../../Components/Texts/NavBarText/NavBarText'
 import { CustomSearchInput } from '../../Components/CustomSearchInput/CustomSearchInput'
 import { MenuContainer } from '../MenuContainer/MenuContainer'
 
+import { lockIcon } from '../../assets/littleIconsBtn'
 
 interface IProps {
 
@@ -24,12 +25,10 @@ export const HeaderContainer: FC<IProps> = ({ }) => {
                     <MenuContainer />
                 </div>
                 <div className={styles.login}>
-                    <LoginBtn />
+                    <LoginBtn svgIcon={lockIcon} />
                 </div>
 
             </header>
         </div>
     )
 }
-
-

@@ -19,14 +19,18 @@ const colorsOjb: { [key in Colors]: string } = {
 
 export const SVGcontainer: FC<IProps> = ({ svgIcon, specialColor, withHover = false }) => {
 
-    let resultStyle = []
+    let hover = []
+    let colors = []
 
-    specialColor && resultStyle.push(colorsOjb[specialColor])
-    withHover && resultStyle.push(styles.grayHover)
+    specialColor && colors.push(colorsOjb[specialColor])
+    withHover && hover.push(styles.grayHover)
 
     return (
-        <div className={resultStyle.join(' ')} >
-            {svgIcon}
+        <div className={colors.join(' ')}>
+            <div className={hover.join(' ')} >
+                {svgIcon}
+            </div>
         </div>
     )
 }
+

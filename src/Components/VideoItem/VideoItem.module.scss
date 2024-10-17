@@ -6,6 +6,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: fit-content;
+
+    & img {
+        width: 100%;
+    }
 }
 
 .btnContainer {

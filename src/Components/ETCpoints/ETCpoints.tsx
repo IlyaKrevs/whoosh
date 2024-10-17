@@ -10,7 +10,7 @@ export const ETCpoints: FC<IProps> = ({ }) => {
     let points = []
 
     for (let i = 0; i < 3; i++) {
-        points.push(<div className={styles.point}></div>)
+        points.push(<div key={i} className={styles.point}></div>)
     }
 
     return (

@@ -1,0 +1,39 @@
+@import '../../../utils/vars';
+
+
+.mainContainer {
+    padding: 0 64px;
+
+    @media (max-width: 1365px) {
+        padding: 0;
+        text-align: center;
+    }
+
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    align-items: center;
+
+    color: $dark-blue;
+    @include txt2;
+
+
+    .first {
+        opacity: 0.64;
+    }
+
+    .second {
+        display: flex;
+        justify-content: center;
+    }
+
+    .third {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 8px;
+
+        p {
+            opacity: 0.64;
+        }
+    }
+}

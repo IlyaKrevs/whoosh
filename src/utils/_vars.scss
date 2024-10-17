@@ -26,8 +26,14 @@ $green: #27AE60;
 }
 
 
+
 @mixin h1 {
-    @include text('Intro Bold', 700, 40, 48)
+    @include text('Intro Bold', 700, 40, 48);
+
+    @media (max-width: 1365px) {
+        @include text('Intro Bold', 700, 24, 32);
+    }
+
 }
 
 @mixin h2 {
@@ -65,14 +71,14 @@ $green: #27AE60;
 
 
 
-/* 1366/2=683 and 360/2=130 */
+/* 1366/2=683 and 360/2=180 */
 
 @mixin trim {
     padding-left: calc(50% - 683px);
     padding-right: calc(50% - 683px);
 
     @media (max-width: 1365px) {
-        padding-left: calc(50% - 130px);
-        padding-right: calc(50% - 130px);
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
     }
 }

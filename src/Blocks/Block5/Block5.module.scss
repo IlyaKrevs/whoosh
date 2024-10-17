@@ -1,0 +1,34 @@
+@import '../../utils/vars';
+
+
+
+.mainContainer {
+    padding: 98px 103px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @media (max-width: 1365px) {
+        padding: 32px 0 48px 0;
+    }
+}
+
+
+
+
+.cadrContainer {
+    height: 56px;
+    width: 84px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $light-blue;
+
+    cursor: pointer;
+
+}
+

@@ -4,7 +4,12 @@
 .mainContainer {
     position: relative;
     width: 100%;
-    border-top: 2px solid $light-blue;
+
+    height: 2px;
+    background-color: $light-blue;
+
+    display: flex;
+    justify-content: center;
 }
 
 .boxContainer {
@@ -12,6 +17,5 @@
     background-color: #fff;
 
     position: absolute;
-    top: -14px;
-    left: calc(50% - 16px);
+    transform: translateY(-50%);
 }

@@ -6,10 +6,19 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+
+    @media (max-width: 1365px) {
+        padding: 32px 16px;
+    }
 }
 
 
 .cardsContainer {
     display: flex;
     gap: 50px;
+
+    @media (max-width: 1365px) {
+        flex-direction: column;
+        gap: 32px;
+    }
 }

@@ -18,5 +18,16 @@
 
         @include h3;
         opacity: 0.48;
+
+
+    }
+
+    @media (max-width: 1365px) {
+        gap: 10px;
+        text-align: center;
+
+        & p {
+            width: auto;
+        }
     }
 }

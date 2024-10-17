@@ -9,6 +9,11 @@
     flex-direction: column;
     align-items: center;
     gap: 36px;
+
+    @media (max-width: 1365px) {
+        background-color: $bkgColor;
+        padding: 32px 16px;
+    }
 }
 
 .bgcRectangle {
@@ -23,6 +28,10 @@
     background-color: $bkgColor;
     border-radius: 2300px 0 0 2300px;
 
+    @media (max-width: 1365px) {
+        display: none;
+    }
+
 }
 
 .cityBg {
@@ -34,12 +43,21 @@
     top: -80px;
     width: 100%;
     height: 100%;
+
+    @media (max-width: 1365px) {
+        display: none;
+    }
 }
 
 .cardContainer {
     display: flex;
     justify-content: center;
     gap: 50px;
+
+    @media (max-width: 1365px) {
+        flex-direction: column;
+        gap: 36px;
+    }
 }
 
 .btnContainer {

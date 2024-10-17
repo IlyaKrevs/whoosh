@@ -1,7 +1,8 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect, useRef, useState } from 'react'
 import styles from './MenuContainer.module.scss'
 import { CustomSearchInput } from '../../Components/CustomSearchInput/CustomSearchInput'
 import { NavBarText } from '../../Components/Texts/NavBarText/NavBarText'
+import { ColorBtn } from '../../Components/ColorBtn/ColorBtn'
 
 
 interface IProps {
@@ -9,10 +10,49 @@ interface IProps {
 }
 
 export const MenuContainer: FC<IProps> = ({ }) => {
+
+    const [isShow, setIsShow] = useState<boolean>(false)
+
+    const menuRef = useRef<HTMLDivElement | null>(null)
+
+    useEffect(() => {
+
+        const clickOutHandler = (e: MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+                setIsShow(false)
+            }
+        }
+
+        document.addEventListener('click', clickOutHandler)
+
+        return () => {
+            document.removeEventListener('click', clickOutHandler)
+        }
+    }, [])
+
+
+    let menuStyles = [styles.menuContainer]
+    isShow && menuStyles.push(styles.isOpen)
+
+
     return (
-        <>
-            <div className={''}></div>
-            <div className={styles.menuContainer}>
+        <div ref={menuRef}>
+            <div className={styles.openMenuBtn}
+                onClick={() => setIsShow(true)}
+            >
+                <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 11C6 10.4477 6.44772 10 7 10H17C17.5523 10 18 10.4477 18 11C18 11.5523 17.5523 12 17 12H7C6.44772 12 6 11.5523 6 11Z" fill="#C2D2F4" />
+                    <path d="M6 11C6 10.4477 6.44772 10 7 10H17C17.5523 10 18 10.4477 18 11C18 11.5523 17.5523 12 17 12H7C6.44772 12 6 11.5523 6 11Z" fill="#B7C6E7" />
+                    <path d="M0 6C0 5.44772 0.447715 5 1 5H17C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7H1C0.447716 7 0 6.55228 0 6Z" fill="#C2D2F4" />
+                    <path d="M0 6C0 5.44772 0.447715 5 1 5H17C17.5523 5 18 5.44772 18 6C18 6.55228 17.5523 7 17 7H1C0.447716 7 0 6.55228 0 6Z" fill="#B7C6E7" />
+                    <path d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1Z" fill="#C2D2F4" />
+                    <path d="M0 1C0 0.447715 0.447715 0 1 0H17C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447716 2 0 1.55228 0 1Z" fill="#B7C6E7" />
+                </svg>
+
+            </div>
+            <div
+
+                className={menuStyles.join(' ')}>
 
                 <div className={styles.cityText}>
                     <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,6 +61,14 @@ export const MenuContainer: FC<IProps> = ({ }) => {
                     </svg>
 
                     <NavBarText innerText='NY, Manhattan' />
+
+                    <div onClick={() => setIsShow(false)}
+                        className={styles.closeBtn}>
+                        <span className={styles.first}></span>
+                        <span className={styles.second}></span>
+
+
+                    </div>
                 </div>
 
 
@@ -42,7 +90,11 @@ export const MenuContainer: FC<IProps> = ({ }) => {
                         </li>
                     </ul>
                 </nav>
+
+                <div className={styles.btnWrapper}>
+                    <ColorBtn viewStyle='blue' text='Take a complex order' />
+                </div>
             </div>
-        </>
+        </div>
     )
 }

@@ -1,0 +1,54 @@
+@import '../../utils/vars';
+
+
+.mainContainer {
+    position: relative;
+    padding: 0 20px;
+
+
+    @media (max-width: 1365px) {
+        padding: 0
+    }
+}
+
+.arrowContainer {
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+    border-left: 4px solid $dark-blue;
+    border-top: 4px solid $dark-blue;
+    opacity: 0.16;
+
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    top: calc(50% - 10px);
+
+    transform: translateY(50%);
+}
+
+.leftArrow {
+    left: 0;
+    order: -1;
+    transform: rotate(-45deg);
+}
+
+.rightArrow {
+    right: 0;
+    order: 2;
+    transform: rotate(135deg);
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapperPos {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}

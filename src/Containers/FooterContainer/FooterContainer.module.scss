@@ -1,0 +1,135 @@
+@import '../../utils/vars';
+
+.wrapper {
+    padding: 84px 103px 56px 103px;
+    background-color: $bkgColor;
+
+    border-top: 1px solid $light-blue;
+
+
+    @media (max-width: 1365px) {
+        padding: 32px 16px;
+    }
+}
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+
+}
+
+.INSANEcontainer {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    gap: 60px;
+
+    @media (max-width: 1365px) {
+        row-gap: 40px;
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contentItem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 1365px) {
+        gap: 10px;
+
+        &:nth-child(1),
+        &:nth-child(4) {
+            grid-column: 1 / span 2;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            column-gap: 20px;
+            grid-column: span 1
+        }
+    }
+}
+
+.titleText {
+    @include text('Intro Bold', 700, 14, 16);
+    color: $dark-blue;
+    padding-bottom: 9px;
+    border-bottom: 2px solid $light-blue;
+    text-transform: uppercase;
+}
+
+.descWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @media (max-width: 1365px) {
+        gap: 20px;
+    }
+}
+
+.descText {
+    @include text('Intro Book', 400, 14, 32);
+    color: $dark-blue;
+    opacity: 0.64;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.specialContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.svgContainer {
+    flex-shrink: 0;
+}
+
+.ultrabigNUMBERS {
+    @include text('Intro Bold', 700, 24, 32);
+    color: $dark-blue;
+}
+
+.iconsConainer {
+    display: flex;
+    gap: 24px;
+
+    @media (max-width: 1365px) {
+        justify-content: center;
+        gap: 38px;
+    }
+}
+
+.growContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.lineWrapper {
+    position: relative;
+    background-color: $light-blue;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+
+    .lineText {
+        position: absolute;
+        transform: translateY(-50%);
+        background-color: $bkgColor;
+        padding: 5px;
+        @include text('Intro Regular', 400, 14, 24);
+        color: $light-blue;
+    }
+}

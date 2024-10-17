@@ -9,6 +9,12 @@
     background-position: center 100%;
 
     background-repeat: no-repeat;
+
+
+    @media (max-width: 1365px) {
+        background-image: url('../../assets/city360.png');
+        background-position: center calc(100% - 200px);
+    }
 }
 
 .mainContainer {
@@ -16,13 +22,23 @@
 
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1365px) {
+        flex-direction: column;
+        padding: 32px 16px;
+    }
 }
 
 .left {
     display: flex;
     flex-direction: column;
     gap: 80px;
+
+    @media (max-width: 1365px) {
+        gap: 40px;
+    }
 }
+
 
 .titleContainer {
     padding-top: 30px;
@@ -40,6 +56,15 @@
     & p {
         width: 360px;
         @include txt;
+
+        @media (max-width: 1365px) {
+            width: auto;
+        }
+    }
+
+    @media (max-width: 1365px) {
+        width: auto;
+        gap: 15px;
     }
 }
 
@@ -61,4 +86,13 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 72px;
+
+    width: 360px;
+
+
+    @media (max-width: 1365px) {
+        width: 100%;
+        order: -1;
+        gap: 32px;
+    }
 }

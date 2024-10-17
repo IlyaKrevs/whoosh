@@ -3,7 +3,7 @@ import styles from './TitleAndDescription.module.scss'
 
 interface IProps {
     title: string,
-    desc: string,
+    desc?: string,
 }
 
 export const TitleAndDescription: FC<IProps> = ({ title, desc }) => {
@@ -12,9 +12,12 @@ export const TitleAndDescription: FC<IProps> = ({ title, desc }) => {
             <h2>
                 {title}
             </h2>
-            <p>
-                {desc}
-            </p>
+            {(desc && desc.length > 0)
+                &&
+                <p>
+                    {desc}
+                </p>}
         </div>
     )
 }
+

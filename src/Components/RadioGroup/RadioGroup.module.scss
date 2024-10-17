@@ -41,9 +41,18 @@
         border-width: 2px;
         border-color: $blue;
     }
+
+    @media (max-width: 1365px) {
+        height: 100%;
+        padding: 0;
+    }
 }
 
 .textContainer {
     @include text('Intro Book', 400, 12, 24);
     color: $dark-blue;
+
+    @media (max-width: 1365px) {
+        display: none;
+    }
 }

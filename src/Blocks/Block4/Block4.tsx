@@ -11,7 +11,7 @@ export const Block4 = () => {
     const content = data4.map(item => <SquareCard key={item.id} {...item} isSpecialStyle={true} />)
 
     return (
-        <div className={styles.mainContainer}>
+        <section className={styles.mainContainer}>
             <div className={styles.bgcRectangle}></div>
             <div className={styles.cityBg}></div>
             <TitleAndDescription
@@ -27,7 +27,7 @@ export const Block4 = () => {
 
                 <ColorBtn viewStyle='yellow' text='Get started!' />
             </div>
-        </div>
+        </section>
     )
 }
 
