@@ -1,6 +1,8 @@
 @import '../../utils/vars';
 
-
+.wrapper{
+    @include trim;
+}
 
 .mainContainer {
     padding: 98px 103px;

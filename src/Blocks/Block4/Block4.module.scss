@@ -1,5 +1,14 @@
 @import '../../utils/vars';
 
+.wrapper {
+    @include trim;
+    position: relative;
+
+    @media (max-width: 1365px) {
+        background-color: $bkgColor;
+    }
+}
+
 .mainContainer {
     position: relative;
 
@@ -11,7 +20,6 @@
     gap: 36px;
 
     @media (max-width: 1365px) {
-        background-color: $bkgColor;
         padding: 32px 16px;
     }
 }

@@ -43,10 +43,12 @@ export const Block3 = () => {
     }
 
     return (
-        <section className={styles.mainContainer}>
-            <TitleAndDescription title='Our Partners' />
+        <section className={styles.wrapper}>
+            <div className={styles.mainContainer}>
+                <TitleAndDescription title='Our Partners' />
 
-            <SliderBlank perView={isDesk ? 6 : 1.5} spaceBetween={isDesk ? 80 : 20} withPagination={false} items={content} />
+                <SliderBlank perView={isDesk ? 6 : 1.5} spaceBetween={isDesk ? 80 : 20} withPagination={false} items={content} />
+            </div>
         </section>
     )
 }

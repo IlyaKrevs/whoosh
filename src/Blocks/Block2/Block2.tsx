@@ -12,14 +12,16 @@ export const Block2 = () => {
     let content = data2.map(item => <SquareCard key={item.id} {...item} />)
 
     return (
-        <section className={styles.mainContainer}>
-            <TitleAndDescription
-                title='Express delivery market revolution'
-                desc='Express courier service in the city. We are a reliable logistics partner for delivery services for online stores and restaurants!'
-            />
+        <section className={styles.wrapper}>
+            <div className={styles.mainContainer}>
+                <TitleAndDescription
+                    title='Express delivery market revolution'
+                    desc='Express courier service in the city. We are a reliable logistics partner for delivery services for online stores and restaurants!'
+                />
 
-            <div className={styles.cardsContainer}>
-                {content}
+                <div className={styles.cardsContainer}>
+                    {content}
+                </div>
             </div>
         </section>
     )

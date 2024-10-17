@@ -11,21 +11,24 @@ export const Block4 = () => {
     const content = data4.map(item => <SquareCard key={item.id} {...item} isSpecialStyle={true} />)
 
     return (
-        <section className={styles.mainContainer}>
+
+        <section className={styles.wrapper}>
             <div className={styles.bgcRectangle}></div>
             <div className={styles.cityBg}></div>
-            <TitleAndDescription
-                title='What we do'
-                desc='Express courier service in the city. We are a reliable logistics partner for delivery services for online stores and restaurants!'
-            />
+            <div className={styles.mainContainer}>
+                <TitleAndDescription
+                    title='What we do'
+                    desc='Express courier service in the city. We are a reliable logistics partner for delivery services for online stores and restaurants!'
+                />
 
-            <div className={styles.cardContainer}>
-                {content}
-            </div>
+                <div className={styles.cardContainer}>
+                    {content}
+                </div>
 
-            <div className={styles.btnContainer}>
+                <div className={styles.btnContainer}>
 
-                <ColorBtn viewStyle='yellow' text='Get started!' />
+                    <ColorBtn viewStyle='yellow' text='Get started!' />
+                </div>
             </div>
         </section>
     )

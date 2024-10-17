@@ -1,5 +1,9 @@
 @import '../../utils/vars';
 
+.pageWrap {
+    @include trim;
+}
+
 .wrapper {
     padding: 100px 103px 84px 103px;
 
@@ -27,6 +31,3 @@
     bottom: 0;
     right: 0;
 }
-
-
-

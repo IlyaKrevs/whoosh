@@ -1,5 +1,9 @@
 @import '../../utils/vars';
 
+.wrapper{
+    @include trim;
+}
+
 .mainContainer {
     padding: 96px 183px;
     display: flex;

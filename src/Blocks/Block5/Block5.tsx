@@ -43,10 +43,13 @@ export const Block5 = () => {
     }
 
     return (
-        <section className={styles.mainContainer}>
-            <TitleAndDescription title='Payment methods' />
+        <section className={styles.wrapper}>
 
-            <SliderBlank withPagination={isDesk} spaceBetween={isDesk ? 100 : 50} perView={isDesk ? 6 : 2.5} items={content} />
+            <div className={styles.mainContainer}>
+                <TitleAndDescription title='Payment methods' />
+
+                <SliderBlank withPagination={isDesk} spaceBetween={isDesk ? 100 : 50} perView={isDesk ? 6 : 2.5} items={content} />
+            </div>
         </section>
     )
 }
