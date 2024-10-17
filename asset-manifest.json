@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/whoosh/static/css/main.89b8afee.css",
-    "main.js": "/whoosh/static/js/main.e8507135.js",
+    "main.css": "/whoosh/static/css/main.d0738330.css",
+    "main.js": "/whoosh/static/js/main.c8dc48f9.js",
     "static/media/video.png": "/whoosh/static/media/video.437d1474be37423eb4bf.png",
     "static/media/cityIntersect.png": "/whoosh/static/media/cityIntersect.733d744736b5e8b1e165.png",
     "static/media/Intro-Book.ttf": "/whoosh/static/media/Intro-Book.cd9aac58a97d24734201.ttf",
@@ -13,11 +13,11 @@
     "static/media/Intro-Book.woff": "/whoosh/static/media/Intro-Book.047d1f862e6d617bfca0.woff",
     "static/media/Route.svg": "/whoosh/static/media/Route.de049f76289456ef03c528f308be6888.svg",
     "index.html": "/whoosh/index.html",
-    "main.89b8afee.css.map": "/whoosh/static/css/main.89b8afee.css.map",
-    "main.e8507135.js.map": "/whoosh/static/js/main.e8507135.js.map"
+    "main.d0738330.css.map": "/whoosh/static/css/main.d0738330.css.map",
+    "main.c8dc48f9.js.map": "/whoosh/static/js/main.c8dc48f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.89b8afee.css",
-    "static/js/main.e8507135.js"
+    "static/css/main.d0738330.css",
+    "static/js/main.c8dc48f9.js"
   ]
 }
